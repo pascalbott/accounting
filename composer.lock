@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d754c78bf2c552c260684021386bccf2",
+    "packages": [
+        {
+            "name": "pascalbott/pdo-database",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pascalbott/pdo-database.git",
+                "reference": "b369f3128a15ad2f241f7e07cce4d2b6899e737b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pascalbott/pdo-database/zipball/b369f3128a15ad2f241f7e07cce4d2b6899e737b",
+                "reference": "b369f3128a15ad2f241f7e07cce4d2b6899e737b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Database\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pascal Bott",
+                    "email": "pascal.bott@bluewin.ch",
+                    "role": "Creator/Developer"
+                }
+            ],
+            "description": "A simple PDO class written in PHP to connect to MySQL database",
+            "support": {
+                "issues": "https://github.com/pascalbott/pdo-database/issues",
+                "source": "https://github.com/pascalbott/pdo-database/tree/v0.2"
+            },
+            "time": "2021-07-26T16:38:28+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.4.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

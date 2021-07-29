@@ -1,0 +1,15 @@
+{
+    "name": "pascalbott/accounting",
+    "description": "A simple accounting library with general ledger and account plan for Switzerland",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Accounting\\": "./"
+        }
+    },
+    "require": {
+        "php": ">=7.4.0",
+        "pascalbott/pdo-database": "v0.2"
+    }
+}
