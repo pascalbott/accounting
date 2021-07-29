@@ -46,11 +46,13 @@ CREATE TABLE IF NOT EXISTS ledger (
     amount FLOAT,
     valuta DATETIME,
     updatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
-)
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (should) REFERENCES account(accountNumber),
+    FOREIGN KEY (have) REFERENCES account(accountNumber)
+);
 ```
 
-(Optional) Import [Swiss Account Plan](https://veb.ch/fileadmin/documents/publikationen/Kontenrahmen_KMU/20131119_Schulkontenrahmen_web.pdf) using our template
+(Optional) Import [Swiss Account Plan](https://veb.ch/fileadmin/documents/publikationen/Kontenrahmen_KMU/20131119_Schulkontenrahmen_web.pdf) using our [template](https://github.com/pascalbott/accounting/blob/main/setup/swissAccountPlan.sql)
 
 ## Add new record
 Simple create an associative arrays:
